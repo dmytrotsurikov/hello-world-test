@@ -47,6 +47,8 @@ public class PasswordGenerate {
 
 
             }
+           /* if(password.length() == 0) password.charAt(password.length() -1 !=0);
+                continue; */
 
             password.append(symbol);
 
