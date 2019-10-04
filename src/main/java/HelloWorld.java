@@ -1,17 +1,31 @@
 import java.util.Scanner;
 
 public class HelloWorld {
-    public static void main(String[] args) {
-       // int a = 1;
-       // int b = 2 ;
-       // System.out.println( a  +  " Hello world! " + b );
-      //   System.out.printf("%d плюс %d  ",  a,b) ;
-        Scanner scanner= new  Scanner(System.in) ;
-        System.out.println("Enter x:");
-        int x = scanner.nextInt();
-        System.out.println("Enter y:");
-        int y = scanner.nextInt();
-        System.out.printf("%d * %d = %d", x, y,  x * y );
+    public static int min(int a, int b, int c, int d) {
+        //напишите тут ваш код
+        int z;
+        if (c < min(a,b) && c < d)
+            z = c;
+        else
+            z = d;
+        return z;
+
     }
 
+    public static int min(int a, int b) {
+        //напишите тут ваш код
+        int m;
+        if (a < b)
+            m = a;
+        else
+            m = b;
+        return m;
+
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(min(-20, -10));
+        System.out.println(min(-20, -10, -30, -40));
+        System.out.println(min(-20, -10, -30, 40));
+    }
 }
